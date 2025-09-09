@@ -30,7 +30,7 @@ export function Navigation() {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 scrolled ? 
-                'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+                'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-transparent'
             }`
         }
     >
@@ -64,7 +64,7 @@ export function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-gray-900"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X className="text-gray-400" size={24} /> : <Menu className="text-gray-400" size={24} />}
             </button>
           </div>
         </div>
@@ -88,7 +88,7 @@ export function Navigation() {
                 </a>
               ))}
               <button className="w-full bg-gray-900 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors mt-4">
-                Let's Talk
+                Download CV
               </button>
             </div>
           </motion.div>

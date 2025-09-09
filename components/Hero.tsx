@@ -6,17 +6,17 @@ import { ChevronDown } from 'lucide-react'
 export function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mt-10 text-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 mt-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto flex flex-col justify-center items-center"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-gray-300 mb-6 leading-tight">
-            Crafting Unique
+            John Doe
             <br />
-            <span className="text-gray-400">Brand Identities</span>
+            <span className="text-gray-400">Aspiring Web Developer</span>
           </h1>
           
           <motion.p
@@ -25,7 +25,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-600 mb-4 font-medium"
           >
-            Branding that you need Indeed
+            Building skills, seeking opportunities
           </motion.p>
           
           <motion.p
@@ -34,8 +34,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto"
           >
-            Elevate your brand with custom identity and package design. 
-            Showcase your story through bold visuals and strategic design solutions.
+            Passionate about creating clean and functional web applications. 
+            Currently exploring React, JavaScript, and modern web technologies. 
+            Open to internship opportunities where I can learn and grow as a developer.
           </motion.p>
 
           <motion.div

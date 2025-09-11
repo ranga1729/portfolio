@@ -2,7 +2,10 @@ import About from "@/components/About";
 import { Hero } from "@/components/Hero";
 import { Articles } from "@/components/Articles";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import { Services } from "@/components/Services";
+import { Reviews } from "@/components/Reviews";
+import { Stats } from "@/components/Stats";
+import { FAQ } from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -11,10 +14,11 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-t from-gray-950 via-gray-950 to-gray-900">
         <Hero />
         <About />
-
-        {/* editable */}
-
         <Articles />
+        <Services />
+        <Reviews/>
+        <Stats/>
+        <FAQ/>
       </div>
 
       <BackgroundBeams />

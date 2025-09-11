@@ -6,20 +6,29 @@ import profile_pic from "../public/Profile_Pic.jpg"
 
 export default function About() {
   const skills = [
-    'Product Design', 'Brand Identity Design', 'UX Design', 
-    'Branding', 'Packaging Design', 'Figma', 'Photoshop'
+    "React", "Next JS", "Javascript", "Typescript", "SQL",
+    "Postgres", "MongoDB", "C#", "ASP.NET Core", "Python",
+    "Git", "GitHub","Docker", "Machine Learning", "Pandas",
+    "Agile", "Scrum", "Team working", "Business Communication"
+
   ]
 
   const experience = [
-    { role: 'Freelance', company: 'GreenLeaf Co', period: 'Currently' },
-    { role: 'Brand Designer', company: 'UrbanFit Studio', period: '2023-24' },
-    { role: 'Package Designer', company: 'GreenK Studio', period: '2020-22' },
+    { role: 'Full-Time Student', company: 'University of Colombo School of Computing', period: '2024-Nov - Present' },
+    { role: 'Full Stack developer - Intern', company: 'Calcey Technologies', period: '2024-May - 2024-Nov' },
+    { role: 'Apprenticeship Student', company: 'Calcey Technologies', period: '2023-Feb - 2024-May' },
+  ]
+
+  const education = [
+    {certification: "Degree name", institute: "institute", status:"status"},
+    {certification: "Degree name", institute: "institute", status:"status"},
+    {certification: "Degree name", institute: "institute", status:"status"},
   ]
 
   return (
     <section id="about" className="py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +45,37 @@ export default function About() {
               and inspire, blending creativity with strategy to elevate brands.
             </p>
 
-            <div className="mb-10">
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-300 mb-4">Experience</h3>
+              <div className="space-y-4">
+                 {experience.map((exp, index) => (
+                  <div key={index} className="flex justify-between items-center">
+                    <div>
+                      <p className="font-semibold text-gray-300">{exp.role}</p>
+                      <p className="text-gray-400">{exp.company}</p>
+                    </div>
+                    <span className="text-sm text-gray-500">{exp.period}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-300 mb-4">Education</h3>
+              <div className="space-y-4">
+                 {education.map((edu, index) => (
+                  <div key={index} className="flex justify-between items-center">
+                    <div>
+                      <p className="font-semibold text-gray-300">{edu.certification}</p>
+                      <p className="text-gray-400">{edu.institute}</p>
+                    </div>
+                    <span className="text-sm text-gray-500">{edu.status}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-300 mb-4"> Skills</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill) => (
@@ -46,21 +85,6 @@ export default function About() {
                   >
                     {skill}
                   </span>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-gray-300 mb-4">Experience</h3>
-              <div className="space-y-4">
-                 {experience.map((exp, index) => (
-                  <div key={index} className="flex justify-between items-center">
-                    <div>
-                      <p className="font-semibold text-gray-400">{exp.role}</p>
-                      <p className="text-gray-400">{exp.company}</p>
-                    </div>
-                    <span className="text-sm text-gray-500">{exp.period}</span>
-                  </div>
                 ))}
               </div>
             </div>

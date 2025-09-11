@@ -25,10 +25,10 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-600 mb-4 font-medium"
           >
-            Building skills, seeking opportunities
+            Building skills & seeking opportunities...
           </motion.p>
           
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -37,7 +37,7 @@ export function Hero() {
             Passionate about creating clean and functional web applications. 
             Currently exploring React, JavaScript, and modern web technologies. 
             Open to internship opportunities where I can learn and grow as a developer.
-          </motion.p>
+          </motion.p> */}
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export function Hero() {
             </button>
             
             <div className="mt-16 flex flex-col items-center">
-              <p className="text-sm text-gray-500 mb-4">Scroll down to see projects</p>
+              <p className="text-sm text-gray-500 mb-4">Scroll down</p>
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}

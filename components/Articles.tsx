@@ -32,17 +32,10 @@ export function Articles() {
       image: article_3,
       link: "https://medium.com/@rangamudunkotuwa1729/beauty-of-the-skip-list-data-structure-df5ffbdb867d"
     },
-    {
-      title: 'Beauty of the Skip List',
-      description: 'As a dedicated freelancer, I ensure your project is completed with precision and delivered within 2-3 days. With a keen eye for detail and a passion for quality, I bring your vision to life—on time and beyond expectations.',
-      icon: CheckCircle,
-      image: article_3,
-      link: "https://medium.com/@rangamudunkotuwa1729/beauty-of-the-skip-list-data-structure-df5ffbdb867d"
-    }
   ]
 
   return (
-    <section id="process" className="py-20">
+    <section id="articles" className="py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h2

@@ -21,7 +21,7 @@ export function Services() {
       description: 'Designing sleek, impactful packaging that not only looks stunning but also connects with your ideal customers — turning first impressions into lasting brand loyalty.'
     },
     {
-      icon: Image,
+      icon: Layers,
       title: 'Mockup Design',
       description: 'Tailored design mockups that align perfectly with your brand\'s aesthetic — because every detail matters when showcasing your product\'s true potential.'
     }

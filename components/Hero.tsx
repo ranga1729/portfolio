@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { RotatingText } from './ui/shadcn-io/rotating-text'
 
 export function Hero() {
   return (
@@ -14,9 +15,14 @@ export function Hero() {
           className="max-w-4xl mx-auto flex flex-col justify-center items-center"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-gray-300 mb-6 leading-tight">
-            John Doe
+            Ranga Mudunkotuwa
             <br />
-            <span className="text-gray-400">Aspiring Web Developer</span>
+            <RotatingText 
+              text={["Web Developer", "ML Enthusiast", "Cyber Sec Enthusiast"]}
+              duration={3000}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className='text-gray-400'
+            />
           </h1>
           
           <motion.p
@@ -27,17 +33,6 @@ export function Hero() {
           >
             Building skills & seeking opportunities...
           </motion.p>
-          
-          {/* <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto"
-          >
-            Passionate about creating clean and functional web applications. 
-            Currently exploring React, JavaScript, and modern web technologies. 
-            Open to internship opportunities where I can learn and grow as a developer.
-          </motion.p> */}
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

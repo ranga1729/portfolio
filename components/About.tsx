@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import profile_pic from "../public/Profile_Pic.jpg"
+import profile_pic from "../public/ranga.jpg"
 
 export default function About() {
   const skills = [
@@ -20,9 +20,9 @@ export default function About() {
   ]
 
   const education = [
-    {certification: "Degree name", institute: "institute", status:"status"},
-    {certification: "Degree name", institute: "institute", status:"status"},
-    {certification: "Degree name", institute: "institute", status:"status"},
+    {certification: "Bachelor of Information Technology - 3rd year", institute: "University of Colombo School of Computing", status:"UG(Current GPA: 3.99)"},
+    {certification: "GCE Advanced Level-Maths stream", institute: "Royal College, Colombo 7", status:"B-Phy C-Maths C-Chem"},
+    {certification: "GCE Ordinary Level", institute: "Homagama Maha Vidyalaya", status:"9A's"},
   ]
 
   return (
@@ -40,9 +40,8 @@ export default function About() {
             </h2>
 
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              I'm Meily, a passionate Brand Identity & Package Designer based in Tokyo. 
-              I specialize in crafting bold visual identities and packaging that captivate 
-              and inspire, blending creativity with strategy to elevate brands.
+              I'm Ranga, a passionate Tech enthusiast & self learner. 
+              I specialize in Web Development and Machine Learning.
             </p>
 
             <div className="mb-8">

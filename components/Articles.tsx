@@ -2,34 +2,45 @@
 
 import { motion } from 'framer-motion'
 import { Search, Send, CheckCircle } from 'lucide-react'
-
-import article_1 from "../public/article_1.webp"
-import article_2 from "../public/article_2.webp"
-import article_3 from "../public/article_3.webp"
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import skip_list from "../public/skip_list.webp"
+import nyquist from "../public/nyquist.webp"
+import md5 from "../public/md5.webp"
+import wpa2 from "../public/wpa2.webp"
+import ml1 from "../public/ml1.webp"
 
 export function Articles() {
   const articlesList = [
     {
+      title: "A Beginner's Guide to Machine Learning: Concepts, Categories, and Real-World Applications",
+      description: "A Beginner's Guide to Machine Learning: Concepts, Categories, and Real-World Applications.",
+      image: ml1,
+      link: "https://rangamudunkotuwa1729.medium.com/a-beginners-guide-to-machine-learning-concepts-categories-and-real-world-applications-cd4994a4ee11"
+    },
+    {
+      title: 'WPA2 Wi-Fi Security: Unpacking the 4-Way Handshake & Key Derivation',
+      description: "WPA2 Wi-Fi Security: Unpacking the 4-Way Handshake & Key Derivation Wi-Fi is based on the IEEE 802.11 protocols(Ex: 802.11a/b/g/n/…). This defines the architecture, MAC and Physical-Layer …",
+      image: wpa2,
+      link: "https://medium.com/@rangamudunkotuwa1729/the-story-of-wpa2-wi-fi-c94d6f9fbd74"
+    },
+    {
       title: 'MD5 Hashing Algorithm',
-      description: 'Find the perfect plan tailored to your needs, offering the right balance of features, flexibility, and value to help you achieve your goals effortlessly.',
-      icon: Search,
-      image: article_1,
+      description: "A deep dive into the MD5 hashing algorithm. Explore its 5-step process, its critical security flaws, and why you should use modern hashes like SHA-2.",
+      image: md5,
       link: "https://medium.com/@rangamudunkotuwa1729/md5-hashing-algorithm-721464ce9f73"
     },
     {
       title: 'Nyquist-Shannon Theory of Signal Sampling',
-      description: 'Easily submit your design requirements through our private design portal, ensuring a seamless process where your vision is understood, refined, and brought to life with precision and creativity.',
-      icon: Send,
-      image: article_2,
+      description: "Nyquist — Shannon Theory of Signal Sampling Recently, I came across this equation to find the maximum data rate of a noiseless channel. (B: Bandwidth of the channel, M: Number of discrete levels in …",
+      image: nyquist,
       link: "https://medium.com/@rangamudunkotuwa1729/nyquist-shannon-theory-of-signal-sampling-25c9d4ebefc6"
     },
     {
       title: 'Beauty of the Skip List',
-      description: 'As a dedicated freelancer, I ensure your project is completed with precision and delivered within 2-3 days. With a keen eye for detail and a passion for quality, I bring your vision to life—on time and beyond expectations.',
-      icon: CheckCircle,
-      image: article_3,
+      description: "Beauty of the Skip List Data Structure While learning data structures and algorithms, I came across a fascinating data structure called “Skip Lists.” The intriguing part isn't just the data …",
+      image: skip_list,
       link: "https://medium.com/@rangamudunkotuwa1729/beauty-of-the-skip-list-data-structure-df5ffbdb867d"
     },
   ]

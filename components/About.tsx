@@ -10,7 +10,6 @@ export default function About() {
     "Postgres", "MongoDB", "C#", "ASP.NET Core", "Python",
     "Git", "GitHub","Docker", "Machine Learning", "Pandas",
     "Agile", "Scrum", "Team working", "Business Communication"
-
   ]
 
   const experience = [
@@ -21,8 +20,17 @@ export default function About() {
 
   const education = [
     {certification: "Bachelor of Information Technology - 3rd year", institute: "University of Colombo School of Computing", status:"UG(Current GPA: 3.99)"},
-    {certification: "GCE Advanced Level-Maths stream", institute: "Royal College, Colombo 7", status:"B-Phy C-Maths C-Chem"},
+    {certification: "GCE Advanced Level-Maths stream", institute: "Royal College, Colombo 7", status:"Phy-B Maths-C Chem-C"},
     {certification: "GCE Ordinary Level", institute: "Homagama Maha Vidyalaya", status:"9A's"},
+  ]
+
+  const keyTechnicalInterests = [
+    "Software Development",
+    "Computer Networks",
+    "Cryptography",
+    "Machine Learning",
+    "Web Technologies",
+    "Mathematics"
   ]
 
   return (
@@ -40,8 +48,13 @@ export default function About() {
             </h2>
 
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              I'm Ranga, a passionate Tech enthusiast & self learner. 
-              I specialize in Web Development and Machine Learning.
+              I am a highly motivated and purpose-driven Computer Science undergraduate. 
+              My approach to technology is rooted in a deep curiosity: I always focus on understanding the "why", the true purpose and requirements—before devising the "how". 
+              This intellectual drive pushes me to grasp the core concepts of a subject rather than just surface details.
+              <br/>
+              <br/>
+              As an obsessive, self-driven perfectionist, I thrive on taking ownership and embracing responsibility, viewing every challenge and mistake as a vital learning opportunity. 
+              My ultimate passion is leveraging technology to create impactful solutions and explore both the micro and macro complexities of computing.
             </p>
 
             <div className="mb-8">
@@ -70,6 +83,20 @@ export default function About() {
                     </div>
                     <span className="text-sm text-gray-500">{edu.status}</span>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-300 mb-4"> Key Technical Interests</h3>
+              <div className="flex flex-wrap gap-3">
+                {keyTechnicalInterests.map((interests) => (
+                  <span
+                    key={interests.toString()}
+                    className="px-4 py-2 bg-gray-700 text-gray-200 rounded-full text-sm font-medium"
+                  >
+                    {interests}
+                  </span>
                 ))}
               </div>
             </div>

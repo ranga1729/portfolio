@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Search, Send, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -10,11 +9,18 @@ import nyquist from "../public/nyquist.webp"
 import md5 from "../public/md5.webp"
 import wpa2 from "../public/wpa2.webp"
 import ml1 from "../public/ml1.webp"
+import ml2 from "../public/ml2.webp"
 
 export function Articles() {
   const articlesList = [
     {
-      title: "A Beginner's Guide to Machine Learning: Concepts, Categories, and Real-World Applications",
+      title: "How AI Learns",
+      description: "A Beginner’s Guide to Linear Regression, Cost Functions and Gradient Descent",
+      image: ml2,
+      link: "https://rangamudunkotuwa1729.medium.com/how-ai-learns-a-beginners-guide-to-linear-regression-cost-functions-and-gradient-descent-cbe25cbd04ba"
+    },
+    {
+      title: "A Beginner's Guide to Machine Learning",
       description: "A Beginner's Guide to Machine Learning: Concepts, Categories, and Real-World Applications.",
       image: ml1,
       link: "https://rangamudunkotuwa1729.medium.com/a-beginners-guide-to-machine-learning-concepts-categories-and-real-world-applications-cd4994a4ee11"
@@ -78,7 +84,7 @@ export function Articles() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="text-center rounded-xl bg-gray-900 p-4 hover:bg-gray-800 transition-colors duration-300 w-full max-w-sm sm:max-w-xs md:max-w-sm lg:max-w-md"
+                  className="text-center rounded-xl bg-gray-900 p-2 hover:bg-gray-800 transition-colors duration-300 w-full max-w-sm sm:max-w-xs md:max-w-sm lg:max-w-sm"
                   onHoverStart={() => console.log(article.link)}
                 >
                   <div className="relative mb-4 flex flex-col justify-center items-center">
@@ -87,7 +93,7 @@ export function Articles() {
                       alt={article.title} 
                       height={160} 
                       width={300} 
-                      className='rounded-xl w-full h-40 object-cover'
+                      className='rounded-xl w-full h-50 object-cover'
                     />
                   </div>
                                 

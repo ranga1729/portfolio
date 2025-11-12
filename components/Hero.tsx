@@ -3,6 +3,14 @@
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { RotatingText } from './ui/shadcn-io/rotating-text'
+import Image from 'next/image'
+
+import LinkedIn from '@/public/socials/linkedin.png'
+import Medium from '@/public/socials/medium.png'
+import WhatsApp from '@/public/socials/whatsapp.png'
+import Facebook from '@/public/socials/facebook.png'
+import Instagram from '@/public/socials/instagram.png'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -18,21 +26,84 @@ export function Hero() {
             Ranga Mudunkotuwa
             <br />
             <RotatingText 
-              text={["Web Developer", "ML Enthusiast", "Cyber Sec Enthusiast"]}
+              text={["Web Development", "Machine Learning", "Cyber & Networking"]}
               duration={3000}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className='text-gray-400'
             />
           </h1>
           
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-600 mb-4 font-medium"
+            className="text-xl md:text-xl text-gray-600 mb-4 font-medium flex flex-col items-center text-center"
           >
-            Building skills & seeking opportunities...
-          </motion.p>
+            <p className="mb-2">Find me on</p>
+
+            <div className="flex flex-wrap justify-center items-center bg-gray-700 p-3 rounded-2xl mt-5 gap-4 w-fit">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={LinkedIn}
+                  alt="LinkedIn"
+                  height={35}
+                  className="hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+
+              <Link
+                href="https://medium.com"
+                target="_blank"
+              >
+                <Image
+                  src={Medium}
+                  alt="Medium"
+                  height={35}
+                  className="hover:scale-110 transition-transform duration-200"
+                />
+              </Link>
+
+              <Link
+                href="https://wa.me/1234567890" // Replace with your WhatsApp number
+                target="_blank"
+              >
+                <Image
+                  src={WhatsApp}
+                  alt="WhatsApp"
+                  height={35}
+                  className="hover:scale-110 transition-transform duration-200"
+                />
+              </Link>
+
+              <Link
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <Image
+                  src={Facebook}
+                  alt="Facebook"
+                  height={35}
+                  className="hover:scale-110 transition-transform duration-200"
+                />
+              </Link>
+
+              <Link
+                href="https://www.instagram.com"
+                target="_blank"
+              >
+                <Image
+                  src={Instagram}
+                  alt="Instagram"
+                  height={35}
+                  className="hover:scale-110 transition-transform duration-200"
+                />
+              </Link>
+            </div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -40,18 +111,18 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col items-center"
           >
-            <button className="bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 hover:scale-105">
-              View My Work
-            </button>
             
             <div className="mt-16 flex flex-col items-center">
               <p className="text-sm text-gray-500 mb-4">Scroll down</p>
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <ChevronDown className="text-gray-400" size={24} />
-              </motion.div>
+              <a href={'#about'}>
+                <motion.nav
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className='hover:bg-gray-700 p-2 rounded-full'
+                >
+                  <ChevronDown className="text-gray-400" size={24} />
+                </motion.nav>
+              </a>
             </div>
           </motion.div>
         </motion.div>

@@ -10,7 +10,7 @@ import { FAQ } from "@/components/FAQ";
 export default function Home() {
   return (
     <div className="bg-gradient-to-t from-gray-950 via-gray-950 to-gray-900">
-      <div>
+      <div className="">
         <Hero />
         <About />
         <Articles />
@@ -20,9 +20,9 @@ export default function Home() {
         <FAQ/> */}
       </div>
 
-      {/* <div>
-        <BackgroundBeams />
-      </div> */}
+      <div>
+        <BackgroundBeams className="absolute inset-0 pointer-events-none" />
+      </div>
     </div>
 
     // <BackgroundGradientAnimation

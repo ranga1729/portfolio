@@ -1,7 +1,7 @@
 export default function HeroSection() {
   return (
-    <div className="w-full h-200 flex flex-col border border-blue-500 items-center justify-center">
+    <section className="w-full min-h-[calc(100dvh-5rem)] flex flex-col items-center justify-center border border-red-500">
       Hero Section
-    </div>
-  )
+    </section>
+  );
 }

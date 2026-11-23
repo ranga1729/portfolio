@@ -57,6 +57,7 @@ export default function HeroSection() {
 
       {/* Foreground Content Layer */}
       <div className="relative z-10 w-full px-6 sm:px-16 pointer-events-none text-center">
+        <p className="font-mono text-5xl mb-5">Hello, I&apos;m ,</p>
         <h1 className="pointer-events-auto inline-block font-heading text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-foreground">
           <DecryptedText
             text="Ranga Mudunkotuwa"
@@ -78,25 +79,29 @@ export default function HeroSection() {
             clickMode="once"
           />
         </h1>
-        <br></br>
-        <h1 className="pointer-events-auto inline-block font-heading text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-[1.1] text-foreground">
-          <RotatingText
-            texts={['Developer', 'Tutor', 'Student']}
-            effect="blur"
-            direction="up"
-            highlight
-            highlightColor="transparent"
-            staggerFrom="last"
-            staggerDuration={0.025}
-            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-            rotationInterval={2000}
-            splitBy="characters"
-            blur={0}
-            auto
-            loop
-            pauseOnHover={false}
-          />
-        </h1>
+
+        <div className="mt-8 flex justify-center">
+          <div className="pointer-events-auto inline-flex items-baseline justify-center gap-2.5 whitespace-nowrap font-heading text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-[1.1] text-foreground">
+            <span className="font-mono">I&apos;m a</span>
+            <RotatingText
+              texts={["Developer", "Teacher", "Student", "Guitarist"]}
+              effect="drop"
+              direction="up"
+              className="inline-flex font-bold"
+              highlight
+              highlightColor="transparent"
+              staggerFrom="last"
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+              rotationInterval={2000}
+              splitBy="characters"
+              blur={0}
+              auto
+              loop
+              pauseOnHover={false}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

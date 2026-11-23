@@ -1,4 +1,5 @@
 import AboutMeSection from "@/components/about-me-section";
+import EducationSection from "@/components/education-section";
 import HeroSection from "@/components/hero-section";
 import ProfileImage from "@/components/profile-image";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <HeroSection />
         <ProfileImage />
         <AboutMeSection />
+        <EducationSection />
         <p className="border w-full text-center h-100">
           Other content
         </p>

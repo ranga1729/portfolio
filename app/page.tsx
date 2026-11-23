@@ -1,4 +1,5 @@
-import HeroSection from "@/components/hero";
+import AboutMeSection from "@/components/about-me-section";
+import HeroSection from "@/components/hero-section";
 import ProfileImage from "@/components/profile-image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="flex flex-1 w-full max-w-6xl flex-col items-center justify-between border-x">
         <HeroSection />
         <ProfileImage />
+        <AboutMeSection />
         <p className="border w-full text-center h-100">
           Other content
         </p>

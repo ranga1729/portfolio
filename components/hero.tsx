@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative w-full min-h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Canvas Layer */}
       <div className="absolute inset-0 z-0">
-        <Lightfall
+        {/* <Lightfall
           colors={["#E0E0E0", "#888888"]}
           backgroundColor="#121212"
           speed={0.3}
@@ -31,8 +31,8 @@ export default function HeroSection() {
           lens={0.5}
           fade={0}
           lightMode={false}
-        />
-        {/* <SideRays
+        /> */}
+        <SideRays
           rayColor1="#FFC46B"
           rayColor2="#96c8ff"
           origin="top-right"
@@ -52,7 +52,7 @@ export default function HeroSection() {
           intro
           lightMode={false}
           opacity={1}
-        /> */}
+        />
       </div>
 
       {/* Foreground Content Layer */}

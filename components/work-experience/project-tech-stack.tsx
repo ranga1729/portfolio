@@ -18,7 +18,7 @@ export default function ProjectTechStack({
         // >
         //   {tech}
         // </span>
-        <TechStackItem tech={tech} />
+        <TechStackItem tech={tech} key={tech} />
       ))}
     </div>
   );

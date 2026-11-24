@@ -21,37 +21,43 @@ export default function ProfileImage() {
     restDelta: 0.001,
   });
 
-  // Expand the mask from a cropped, rounded frame to full container edges
-  const clipPath = useTransform(
-    smoothProgress,
-    [0, 1],
-    ["inset(14% 18% 14% 18% round 24px)", "inset(0% 0% 0% 0% round 0px)"]
-  );
+  // Retract top and bottom covers outward into the adjacent sections
+  const curtainScaleY = useTransform(smoothProgress, [0, 1], [1, 0]);
 
-  // Subtle upward translation during entry
-  const y = useTransform(smoothProgress, [0, 1], [48, 0]);
-
-  // Inverse zoom on the image so edges reveal outward smoothly
-  const scale = useTransform(smoothProgress, [0, 1], [1.2, 1]);
+  // Subtle inverse zoom on the image for vertical depth during reveal
+  const scale = useTransform(smoothProgress, [0, 1], [1.14, 1]);
 
   return (
-    <section ref={containerRef} className="w-full overflow-hidden">
+    <section
+      ref={containerRef}
+      className="relative w-full overflow-hidden bg-background"
+    >
+      {/* Full-Width Image Layer */}
       <motion.div
-        style={{ clipPath, y }}
-        className="w-full overflow-hidden will-change-[clip-path,transform]"
+        style={{ scale }}
+        className="w-full will-change-transform"
       >
-        <motion.div
-          style={{ scale }}
-          className="w-full will-change-transform"
-        >
-          <Image
-            src={profile}
-            alt="Profile Image"
-            className="w-full h-auto object-cover block"
-            priority
-          />
-        </motion.div>
+        <Image
+          src={profile}
+          alt="Profile Image"
+          className="w-full h-auto object-cover block"
+          priority
+        />
       </motion.div>
+
+      {/* Upper Cover (Blends with HeroSection and retracts upward) */}
+      <motion.div
+        aria-hidden="true"
+        style={{ scaleY: curtainScaleY }}
+        className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[24%] origin-top border-b border-border bg-background will-change-transform"
+      />
+
+      {/* Lower Cover (Blends with AboutMeSection and retracts downward) */}
+      <motion.div
+        aria-hidden="true"
+        style={{ scaleY: curtainScaleY }}
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[24%] origin-bottom border-t border-border bg-background will-change-transform"
+      />
     </section>
   );
 }

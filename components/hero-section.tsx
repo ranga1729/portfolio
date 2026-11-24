@@ -6,7 +6,6 @@ import RotatingText from "./animated-texts/RotatingText";
 export default function HeroSection() {
   return (
     <section className="relative w-full min-h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
-      {/* Background Canvas Layer */}
       <div className="absolute inset-0 z-0">
         {/* <Lightfall
           colors={["#E0E0E0", "#888888"]}

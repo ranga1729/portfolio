@@ -1,3 +1,5 @@
+'use client'
+
 import { motion, Variants } from "motion/react"
 import DecryptedText from "./animated-texts/DecryptedText"
 
@@ -25,7 +27,7 @@ export default function SectionHeader(props: Props) {
       <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
         {props.subtitle}
       </p> : null }
-      
+
       <h2 className="font-heading text-3xl font-bold tracking-tight text-foreground sm:text-5xl">
         <DecryptedText
           text={props.title}

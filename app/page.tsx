@@ -2,7 +2,7 @@ import AboutMeSection from "@/components/about-me-section";
 import EducationSection from "@/components/education-section";
 import HeroSection from "@/components/hero-section";
 import ProfileImage from "@/components/profile-image";
-import WorkExperienceSection from "@/components/work-experience";
+import WorkExperienceSection from "@/components/work-experience/work-experience-section";
 
 export default function Home() {
   return (

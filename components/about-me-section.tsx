@@ -4,6 +4,7 @@ import { motion, type Variants } from "motion/react";
 import DecryptedText from "./animated-texts/DecryptedText";
 import { ROLES } from "@/data/general";
 import RoleCardsDeck from "./role-cards-deck";
+import SectionHeader from "./section-header";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -41,26 +42,7 @@ export default function AboutMeSection() {
         viewport={{ once: true, amount: 0.15 }}
         className="flex flex-col gap-16"
       >
-        {/* Section Header */}
-        <motion.div variants={itemVariants} className="flex flex-col gap-3">
-          <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-            01 // Introduction
-          </span>
-          <h2 className="font-heading text-3xl font-bold tracking-tight text-foreground sm:text-5xl">
-            <DecryptedText
-              text="About Me"
-              animateOn="inViewHover"
-              effect="scramble"
-              sequential
-              revealDirection="start"
-              speed={50}
-              maxIterations={8}
-              scrambleColor="#888888"
-              className="text-foreground"
-              encryptedClassName="text-muted-foreground"
-            />
-          </h2>
-        </motion.div>
+        <SectionHeader title={"About Me"} subtitle="01 // Introduction" />
 
         {/* Main Bio + Focus Grid */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">

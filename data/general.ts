@@ -1,5 +1,5 @@
-import { ExperienceItem } from "@/types/general";
-import { BookOpen, Code2, GraduationCap, Music } from "lucide-react";
+import { EducationItem, ExperienceItem } from "@/types/general";
+import { Award, BookOpen, Briefcase, Code2, GraduationCap, Music } from "lucide-react";
 
 export const NAV_ITEMS = [
   { label: "Projects", href: "#projects" },
@@ -171,6 +171,49 @@ export const WORK_EXPERIENCES: ExperienceItem[] = [
           },
         ],
       },
+    ],
+  },
+];
+
+export const EDUCATION_HISTORY: EducationItem[] = [
+  {
+    period: "2025 Dec — Present",
+    title: "Cisco CCNA",
+    institution: "University of Moratuwa",
+    icon: Award,
+    status: "In-Progress",
+    highlights: [
+      { label: "Focus", value: "Networking & Infrastructure" },
+      { label: "Status", value: "In-Progress" },
+    ],
+  },
+  {
+    period: "2023 Oct — 2026 Nov",
+    title: "Bachelor of Information Technology",
+    institution: "University of Colombo School of Computing",
+    icon: GraduationCap,
+    highlights: [
+      { label: "GPA", value: "3.81" },
+      { label: "Field", value: "Information Technology" },
+    ],
+  },
+  {
+    period: "2023 Feb — 2024 May",
+    title: "Calcey Springboard Apprenticeship Program",
+    institution: "Calcey Technologies",
+    icon: Briefcase,
+    highlights: [
+      { label: "Track", value: "Industry Software Engineering Apprenticeship" },
+    ],
+  },
+  {
+    period: "2019 Jan — 2023 Jan",
+    title: "G.C.E. Advanced Level",
+    institution: "Royal College, Colombo 7",
+    icon: BookOpen,
+    highlights: [
+      { label: "Stream", value: "Physical Science" },
+      { label: "Results", value: "B, C, C" },
     ],
   },
 ];

@@ -1,3 +1,5 @@
+import { GraduationCap } from "lucide-react";
+
 export interface HighlightItem {
   lead: string;
   detail: string;
@@ -14,4 +16,13 @@ export interface ExperienceItem {
   company: string;
   role: string;
   projects: WorkProject[];
+}
+
+export interface EducationItem {
+  period: string;
+  title: string;
+  institution: string;
+  icon: typeof GraduationCap;
+  status?: string;
+  highlights: { label: string; value: string }[];
 }

@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Briefcase, FolderGit2 } from "lucide-react";
+import { Briefcase, BuildingComplex, FolderGit2 } from "lucide-react";
 import { WORK_EXPERIENCES } from "@/data/general";
+import SectionHeader from "./section-header";
 
 export default function WorkExperienceSection() {
   return (
@@ -10,18 +11,13 @@ export default function WorkExperienceSection() {
       id="experience"
       className="w-full scroll-mt-20 border-t border-border px-6 sm:px-16 py-24"
     >
-      {/* Section Header */}
-      <div className="mb-12">
-        <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-2">
-          Experience
-        </p>
-        <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
-          Work Experience
-        </h2>
-      </div>
+      <SectionHeader 
+        subtitle={"02 // Experience"} 
+        title={"Experience"} 
+      />
 
       {/* Experience Cards */}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 mt-8">
         {WORK_EXPERIENCES.map((experience, expIndex) => (
           <motion.article
             key={experience.company}
@@ -35,7 +31,7 @@ export default function WorkExperienceSection() {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-6 border-b border-border/70">
               <div className="flex items-start sm:items-center gap-3.5">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border bg-background text-foreground">
-                  <Briefcase className="h-4 w-4 text-muted-foreground" />
+                  <BuildingComplex className="h-4 w-4 text-muted-foreground" />
                 </div>
                 <div>
                   <h3 className="font-heading text-xl sm:text-2xl font-semibold tracking-tight text-foreground">

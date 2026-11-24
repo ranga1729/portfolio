@@ -2,8 +2,8 @@
 
 import { motion, type Variants } from "motion/react";
 import DecryptedText from "./animated-texts/DecryptedText";
-import TechStack from "./tech-stack";
 import { ROLES } from "@/data/general";
+import RoleCardsDeck from "./role-cards-deck";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -70,7 +70,7 @@ export default function AboutMeSection() {
             className="flex flex-col justify-between gap-8 lg:col-span-5"
           >
             <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
-              <p className="text-lg font-medium text-foreground">
+              <p className="text-lg font-medium text-foreground text-justify">
                 I'm a Full-stack Software Engineer specializing in ASP.NET Core, React.js, and production AI integrations. 
                 I'm experienced in architecting scalable, multi-tenant applications and deploying secure backend infrastructure 
                 with a Proven track record of translating complex business requirements into production-ready systems with a strong emphasis on clean architecture, system reliability, and code quality. 
@@ -79,8 +79,6 @@ export default function AboutMeSection() {
                 Outside of shipping code and studies, I enjoy writing technical articles, teaching, and picking up my guitar.
               </p>
             </div>
-
-            <TechStack />
           </motion.div>
 
           {/* Right Column: 2x2 Role Bento Cards */}
@@ -88,32 +86,12 @@ export default function AboutMeSection() {
             variants={containerVariants}
             className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-7"
           >
-            {ROLES.map(({ index, title, icon: Icon, tag, description }) => (
-              <motion.div
-                key={title}
-                variants={itemVariants}
-                className="group flex flex-col justify-between rounded-xl border border-border bg-card p-6 transition-colors duration-300 hover:border-accent"
-              >
-                <div className="mb-6 flex items-center justify-between">
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {index}
-                  </span>
-                  <Icon className="h-4 w-4 text-muted-foreground transition-colors duration-300 group-hover:text-foreground" />
-                </div>
-
-                <div>
-                  <span className="mb-1.5 block font-mono text-[11px] text-muted-foreground">
-                    {tag}
-                  </span>
-                  <h3 className="mb-2 font-heading text-lg font-semibold text-foreground">
-                    {title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    {description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+            <motion.div
+            variants={itemVariants}
+            className="flex items-center justify-center lg:col-span-7"
+          >
+            <RoleCardsDeck />
+          </motion.div>
           </motion.div>
         </div>
       </motion.div>

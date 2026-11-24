@@ -1,3 +1,4 @@
+import { ExperienceItem } from "@/types/general";
 import { BookOpen, Code2, GraduationCap, Music } from "lucide-react";
 
 export const NAV_ITEMS = [
@@ -47,5 +48,129 @@ export const ROLES = [
     tag: "Fingerstyle • Rhythm",
     description:
       "Stepping away from system design and terminal windows to practice fingerstyle arrangements, chord voicings, and rhythm.",
+  },
+];
+
+export const WORK_EXPERIENCES: ExperienceItem[] = [
+  {
+    company: "FACTn Software",
+    role: "Intern Software Developer",
+    projects: [
+      {
+        title: "ChatN – Multi-Tenant AI API Gateway Platform",
+        description:
+          "Unified AI API gateway enabling backend-less chatbots with real-time voice, streaming, and provider-agnostic integrations.",
+        techStack: [
+          "ASP.NET Core 10",
+          "C#",
+          "PostgreSQL",
+          "Redis",
+          "Azure Key Vault",
+          "Azure AI Search",
+          "Azure Blob Storage",
+          "WebSockets",
+          "SSE",
+        ],
+        highlights: [
+          {
+            lead: "Architected a multi-tenant AI API Gateway",
+            detail:
+              "unifying OpenAI and Google Gemini APIs (text, audio, streaming) behind a standardized WebSocket/SSE protocol using Factory and Adapter design patterns.",
+          },
+          {
+            lead: "Engineered resilient AI session management",
+            detail:
+              "incorporating Redis-backed state tracking, ephemeral token auth, inactivity timeouts, and automatic provider failover/reconnection logic.",
+          },
+          {
+            lead: "Implemented an enterprise RAG pipeline",
+            detail:
+              "using Azure AI Search and Azure Blob Storage featuring vector search, document ingestion, response grounding, and strict project-level tenant isolation.",
+          },
+          {
+            lead: "Designed Model Context Protocol (MCP) tool integration,",
+            detail:
+              "building automated tool discovery, namespace collision prevention, and runtime execution proxies.",
+          },
+          {
+            lead: "Built platform governance features",
+            detail:
+              "including prompt versioning, API key lifecycle management, Redis rate limiting, usage/cost tracking, and immutable audit logging.",
+          },
+          {
+            lead: "Enforced zero-trust security & privacy",
+            detail:
+              "via Azure Key Vault secret management, HMAC key hashing, TLS enforcement, and privacy-first ephemeral session storage without long-term message retention.",
+          },
+        ],
+      },
+      {
+        title: "MyDrive – Multivendor Automotive Services Platform",
+        description:
+          "Platform connecting service providers with vehicle owners, enhanced with real-time conversational AI features.",
+        techStack: ["Flutter", "ReactJS", "Python", "Google Gemini Live API"],
+        highlights: [
+          {
+            lead: "Developed proof-of-concept (POC) conversational AI chatbots",
+            detail:
+              "integrating Google Gemini Live API into the Flutter mobile application for real-time voice interaction.",
+          },
+          {
+            lead: "Engineered dynamic system prompts",
+            detail:
+              "to accurately infer user intents, handle contextual follow-up questions, and streamline automotive service bookings.",
+          },
+          {
+            lead: "Evaluated technical feasibility",
+            detail:
+              "of real-time voice and chat AI capabilities within mobile user workflows, presenting functional demonstration scenarios to product teams.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    company: "Calcey Technologies",
+    role: "Intern Software Developer",
+    projects: [
+      {
+        title: "Fresh Fitness Food (FFF)",
+        description:
+          "UK-based personalized nutrition and meal delivery platform offering custom meal plans, dynamic order scheduling, and customer management.",
+        techStack: ["React.js", "ASP.NET Core", "PostgreSQL", "RESTful APIs"],
+        highlights: [
+          {
+            lead: "Engineered full-stack features",
+            detail:
+              "across ASP.NET Core REST APIs and React.js frontends within a cross-functional agile team serving a UK-wide customer base.",
+          },
+          {
+            lead: "Refactored meal order forms",
+            detail:
+              "utilizing reusable React design patterns and optimized client-side state management, significantly improving checkout UX and form completion speeds.",
+          },
+          {
+            lead: "Optimized admin & user dashboards,",
+            detail:
+              "upgrading database queries in PostgreSQL and streamlining API endpoints to reduce rendering latency and elevating platform performance.",
+          },
+          {
+            lead: "Overhauled meal rating & reporting features,",
+            detail:
+              "rebuilding report generation logic to enable accurate, real-time feedback processing for culinary and ops teams.",
+          },
+          {
+            lead: "Developed customer portal enhancements,",
+            detail:
+              "including an interactive order history module that delivers detailed order logs and transaction tracking to end users.",
+          },
+          {
+            lead: "Maintained system reliability,",
+            detail:
+              "actively debugging complex front-end and back-end defects across administrative workflows to ensure platform stability.",
+          },
+        ],
+      },
+    ],
   },
 ];

@@ -2,6 +2,7 @@ import AboutMeSection from "@/components/about-me-section";
 import EducationSection from "@/components/education-section";
 import HeroSection from "@/components/hero-section";
 import ProfileImage from "@/components/profile-image";
+import WorkExperienceSection from "@/components/work-experience";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <HeroSection />
         <ProfileImage />
         <AboutMeSection />
+        <WorkExperienceSection />
         <EducationSection />
         <p className="border w-full text-center h-100">
           Other content

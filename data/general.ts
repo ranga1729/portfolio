@@ -1,5 +1,5 @@
 import { EducationItem, ExperienceItem } from "@/types/general";
-import { Award, BookOpen, Briefcase, Code2, GraduationCap, Music } from "lucide-react";
+import { Award, Book, BookCheck, BookOpen, Briefcase, Certificate, Code2, EthernetPort, GraduationCap, Music, Network } from "lucide-react";
 
 export const NAV_ITEMS = [
   { label: "Projects", href: "#projects" },
@@ -172,7 +172,7 @@ export const EDUCATION_HISTORY: EducationItem[] = [
     period: "2025 Dec — Present",
     title: "Cisco CCNA",
     institution: "University of Moratuwa",
-    icon: Award,
+    icon: EthernetPort,
     status: "In-Progress",
     highlights: [
       { label: "Focus", value: "Networking & Infrastructure" },
@@ -193,7 +193,7 @@ export const EDUCATION_HISTORY: EducationItem[] = [
     period: "2023 Feb — 2024 May",
     title: "Calcey Springboard Apprenticeship Program",
     institution: "Calcey Technologies",
-    icon: Briefcase,
+    icon: Certificate,
     highlights: [
       { label: "Track", value: "Industry Software Engineering Apprenticeship" },
     ],
@@ -202,10 +202,19 @@ export const EDUCATION_HISTORY: EducationItem[] = [
     period: "2019 Jan — 2023 Jan",
     title: "G.C.E. Advanced Level",
     institution: "Royal College, Colombo 7",
-    icon: BookOpen,
+    icon: BookCheck,
     highlights: [
       { label: "Stream", value: "Physical Science" },
       { label: "Results", value: "B, C, C" },
+    ],
+  },
+  {
+    period: "2018 Dec",
+    title: "G.C.E. Ordinary Level",
+    institution: "Homagama Maha Vidyalaya",
+    icon: Book,
+    highlights: [
+      { label: "Results", value: "9As" },
     ],
   },
 ];

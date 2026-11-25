@@ -2,9 +2,10 @@ import { EducationItem, ExperienceItem } from "@/types/general";
 import { Award, Book, BookCheck, BookOpen, Briefcase, Certificate, Code2, EthernetPort, GraduationCap, Music, Network } from "lucide-react";
 
 export const NAV_ITEMS = [
-  { label: "Projects", href: "#projects" },
-  { label: "Articles", href: "#articles" },
-  { label: "Contact", href: "#contact" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Articles", href: "/#articles" },
+  { label: "Class-Schedule", href: "/class" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export const TECH_STACK = [

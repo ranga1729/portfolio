@@ -31,3 +31,10 @@ export interface EducationItem {
   status?: string;
   highlights: EducationHighlight[];
 }
+
+export interface ProjectItem {
+  title: string;
+  description: string;
+  techStack: string[];
+  githubUrl: string;
+}

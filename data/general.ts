@@ -1,4 +1,4 @@
-import { EducationItem, ExperienceItem } from "@/types/general";
+import { EducationItem, ExperienceItem, ProjectItem } from "@/types/general";
 import { Award, Book, BookCheck, BookOpen, Briefcase, Certificate, Code2, EthernetPort, GraduationCap, Music, Network } from "lucide-react";
 
 export const NAV_ITEMS = [
@@ -217,5 +217,62 @@ export const EDUCATION_HISTORY: EducationItem[] = [
     highlights: [
       { label: "Results", value: "9As" },
     ],
+  },
+];
+
+export const PROJECTS: ProjectItem[] = [
+  {
+    title: "Koa - Clothing",
+    description:
+      "An e-commerce store built for a garment brand to launch its new clothing line, featuring clean CQRS architecture, cloud media storage, and transactional notifications.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCN",
+      "ASP.NET Core Web API",
+      "MediatR",
+      "CQRS",
+      "Clean Architecture",
+      "Entity Framework Core",
+      "PostgreSQL",
+      "Supabase",
+      "Clerk Auth",
+      "Azure Communication Service",
+    ],
+    githubUrl: "https://github.com/ranga1729/wichithra-clothing.git",
+  },
+  {
+    title: "FaceTrack",
+    description:
+      "Flask-based facial recognition attendance system using Python and OpenCV to identify registered users and automate attendance marking.",
+    techStack: [
+      "Python",
+      "Flask",
+      "OpenCV",
+      "face-recognition",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    githubUrl: "https://github.com/ranga1729/facetrack.git",
+  },
+  {
+    title: "Wine Analytics: Dashboard (NLP)",
+    description:
+      "Python-based wine analytics platform combining statistical analysis, NLP, sentiment analysis, and interactive Plotly Dash visualizations to explore global wine ratings, pricing, regional patterns, and consumer reviews.",
+    techStack: [
+      "Python",
+      "Jupyter Notebook",
+      "NumPy",
+      "Pandas",
+      "NLTK",
+      "Hugging Face Transformers",
+      "Matplotlib",
+      "Plotly",
+      "Dash",
+    ],
+    githubUrl: "https://github.com/Lithasa/WineAnalytics.git",
   },
 ];

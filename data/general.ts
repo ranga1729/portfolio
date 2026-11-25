@@ -276,3 +276,152 @@ export const PROJECTS: ProjectItem[] = [
     githubUrl: "https://github.com/Lithasa/WineAnalytics.git",
   },
 ];
+
+export type OrbitRingTier = "inner" | "middle" | "outer";
+
+export interface TechStackItem {
+  name: string;
+  category: string;
+  iconUrl: string;
+  ring: OrbitRingTier;
+}
+
+export const TECH_STACKS: TechStackItem[] = [
+  // Inner Ring — Core Languages & Primary Frameworks
+  {
+    name: "C#",
+    category: "Language",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+    ring: "inner",
+  },
+  {
+    name: "TypeScript",
+    category: "Language",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    ring: "inner",
+  },
+  {
+    name: "Python",
+    category: "Language",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    ring: "inner",
+  },
+  {
+    name: "ASP.NET Core",
+    category: "Backend",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+    ring: "inner",
+  },
+  {
+    name: "Next.js",
+    category: "Frontend",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    ring: "inner",
+  },
+  {
+    name: "React",
+    category: "Frontend",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    ring: "inner",
+  },
+
+  // Middle Ring — Databases, Cloud & Infrastructure
+  {
+    name: "PostgreSQL",
+    category: "Database",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    ring: "middle",
+  },
+  {
+    name: "Redis",
+    category: "Caching",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+    ring: "middle",
+  },
+  {
+    name: "Microsoft Azure",
+    category: "Cloud",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
+    ring: "middle",
+  },
+  {
+    name: "Supabase",
+    category: "Backend & Storage",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    ring: "middle",
+  },
+  {
+    name: "Docker",
+    category: "DevOps",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    ring: "middle",
+  },
+  {
+    name: "Git",
+    category: "Version Control",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    ring: "middle",
+  },
+  {
+    name: "SQLite",
+    category: "Database",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+    ring: "middle",
+  },
+
+  // Outer Ring — AI, Mobile, Styling & Data Ecosystem
+  {
+    name: "Google Gemini",
+    category: "AI & Live API",
+    iconUrl: "https://cdn.simpleicons.org/googlegemini/E0E0E0",
+    ring: "outer",
+  },
+  {
+    name: "OpenAI",
+    category: "AI Integration",
+    iconUrl: "https://cdn.simpleicons.org/openai/E0E0E0",
+    ring: "outer",
+  },
+  {
+    name: "Flutter",
+    category: "Mobile",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+    ring: "outer",
+  },
+  {
+    name: "Tailwind CSS",
+    category: "Styling",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ring: "outer",
+  },
+  {
+    name: "Node.js",
+    category: "Runtime",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    ring: "outer",
+  },
+  {
+    name: "Flask",
+    category: "Backend",
+    iconUrl: "https://cdn.simpleicons.org/flask/E0E0E0",
+    ring: "outer",
+  },
+  {
+    name: "OpenCV",
+    category: "Computer Vision",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
+    ring: "outer",
+  },
+  {
+    name: "Hugging Face",
+    category: "NLP & ML",
+    iconUrl: "https://cdn.simpleicons.org/huggingface/E0E0E0",
+    ring: "outer",
+  },
+  {
+    name: "Java",
+    category: "Language",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    ring: "outer",
+  },
+];

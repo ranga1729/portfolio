@@ -3,6 +3,7 @@ import EducationSection from "@/components/education/education-section";
 import HeroSection from "@/components/hero-section";
 import ProfileImage from "@/components/profile-image";
 import ProjectsSection from "@/components/projects/projects-section";
+import TechStackSection from "@/components/tech-stack/tech-stack-section";
 import WorkExperienceSection from "@/components/work-experience/work-experience-section";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <WorkExperienceSection />
         <EducationSection />
         <ProjectsSection />
+        <TechStackSection />
         <p className="border w-full text-center h-100">
           Other content
         </p>

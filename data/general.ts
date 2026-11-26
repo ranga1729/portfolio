@@ -309,7 +309,7 @@ export const TECH_STACKS: TechStackItem[] = [
   {
     name: "ASP.NET Core",
     category: "Backend",
-    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/selfhst/icons/svg/asp-net-core.svg",
     ring: "inner",
   },
   {
@@ -351,6 +351,12 @@ export const TECH_STACKS: TechStackItem[] = [
     ring: "middle",
   },
   {
+    name: "Neon",
+    category: "Backend & Storage",
+    iconUrl: "https://cdn.simpleicons.org/neon",
+    ring: "middle",
+  },
+  {
     name: "Docker",
     category: "DevOps",
     iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
@@ -373,13 +379,13 @@ export const TECH_STACKS: TechStackItem[] = [
   {
     name: "Google Gemini",
     category: "AI & Live API",
-    iconUrl: "https://cdn.simpleicons.org/googlegemini/E0E0E0",
+    iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/google-gemini.svg",
     ring: "outer",
   },
   {
     name: "OpenAI",
     category: "AI Integration",
-    iconUrl: "https://cdn.simpleicons.org/openai/E0E0E0",
+    iconUrl: "https://cdn.jsdelivr.net/gh/selfhst/icons/svg/openai-light.svg",
     ring: "outer",
   },
   {
@@ -403,7 +409,7 @@ export const TECH_STACKS: TechStackItem[] = [
   {
     name: "Flask",
     category: "Backend",
-    iconUrl: "https://cdn.simpleicons.org/flask/E0E0E0",
+    iconUrl: "https://cdn.simpleicons.org/flask",
     ring: "outer",
   },
   {
@@ -415,13 +421,49 @@ export const TECH_STACKS: TechStackItem[] = [
   {
     name: "Hugging Face",
     category: "NLP & ML",
-    iconUrl: "https://cdn.simpleicons.org/huggingface/E0E0E0",
+    iconUrl: "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/huggingface-color.svg",
     ring: "outer",
   },
   {
     name: "Java",
     category: "Language",
-    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/selfhst/icons/svg/java.svg",
+    ring: "outer",
+  },
+  {
+    name: "OpenCode",
+    category: "Coding Agent",
+    iconUrl: "https://cdn.simpleicons.org/opencode",
+    ring: "outer",
+  },
+  {
+    name: "JavaScript",
+    category: "Language",
+    iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/javascript.svg",
+    ring: "outer",
+  },
+  {
+    name: "ShadCN",
+    category: "Component Library",
+    iconUrl: "https://cdn.simpleicons.org/shadcnui/FFFFFF",
+    ring: "outer",
+  },
+  {
+    name: "Clerk",
+    category: "Authentication",
+    iconUrl: "https://cdn.simpleicons.org/clerk",
+    ring: "outer",
+  },
+  {
+    name: "Vercel",
+    category: "Deployment",
+    iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/vercel-light.svg",
+    ring: "outer",
+  },
+  {
+    name: "Render",
+    category: "Deployment",
+    iconUrl: "https://cdn.simpleicons.org/render/FFFFFF",
     ring: "outer",
   },
 ];

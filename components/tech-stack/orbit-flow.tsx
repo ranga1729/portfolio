@@ -28,7 +28,7 @@ export default function OrbitFlow({ items }: OrbitFlowProps) {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="relative flex h-105 min-h-105 w-full items-center justify-center overflow-hidden rounded-xl border border-border bg-card/40 sm:h-140 sm:min-h-140 md:h-185 md:min-h-185"
+      className="relative flex h-105 min-h-105 w-full items-center justify-center overflow-hidden border border-border bg-card/40 sm:h-140 sm:min-h-140 md:h-185 md:min-h-185"
     >
       {/* Subtle Radial Ambient Depth */}
       <div

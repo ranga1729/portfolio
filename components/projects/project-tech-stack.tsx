@@ -1,3 +1,5 @@
+import TechStackItem from "../tech-stack-item";
+
 interface ProjectTechStackProps {
   techStack: string[];
 }
@@ -7,14 +9,9 @@ export default function ProjectTechStack({ techStack }: ProjectTechStackProps) {
 
   return (
     <div className="mt-auto border-t border-border/70 pt-4">
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 justify-center-safe">
         {techStack.map((tech) => (
-          <span
-            key={tech}
-            className="rounded-md border border-border bg-background px-2.5 py-1 font-mono text-xs text-muted-foreground"
-          >
-            {tech}
-          </span>
+          <TechStackItem tech={tech} key={tech} />
         ))}
       </div>
     </div>

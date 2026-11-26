@@ -4,8 +4,8 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import ProjectCardHeader from "./project-card-header";
 import ProjectCardBody from "./project-card-body";
-import ProjectTechStack from "./project-tech-stack";
 import { ProjectItem } from "@/types/general";
+import ProjectTechStack from "./project-tech-stack";
 
 interface ProjectCardProps {
   project: ProjectItem;
@@ -36,7 +36,6 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             description={project.description}
           />
         </div>
-
         <ProjectTechStack techStack={project.techStack} />
       </Link>
     </motion.div>

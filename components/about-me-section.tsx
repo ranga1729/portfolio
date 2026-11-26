@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "motion/react";
-import RoleCardsDeck from "./role-cards-deck";
+import RoleCardsDeck from "./hero/role-cards-deck";
 import SectionHeader from "./section-header";
 
 const containerVariants: Variants = {

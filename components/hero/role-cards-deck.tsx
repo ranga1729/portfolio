@@ -128,7 +128,7 @@ export default function RoleCardsDeck() {
       </div>
 
       {/* Minimal Deck Controls & Role Indicator */}
-      <div className="mt-6 flex w-full max-w-107.5 items-center justify-between px-1">
+      {/* <div className="mt-6 flex w-full max-w-107.5 items-center justify-between px-1">
         <div className="flex items-center gap-1.5">
           {ROLES.map((role, idx) => {
             const selected = idx === activeIndex;
@@ -171,7 +171,7 @@ export default function RoleCardsDeck() {
             <ArrowRight className="h-3.5 w-3.5" />
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

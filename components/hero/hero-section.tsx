@@ -1,7 +1,8 @@
-import Lightfall from "./background/Lightfall";
-import SideRays from "./background/SideRays";
-import DecryptedText from "./animated-texts/DecryptedText";
-import RotatingText from "./animated-texts/RotatingText";
+import Lightfall from "../background/Lightfall";
+import SideRays from "../background/SideRays";
+import DecryptedText from "../animated-texts/DecryptedText";
+import RotatingText from "../animated-texts/RotatingText";
+import ScrollDownIndicator from "../scroll-down-indicator";
 
 export default function HeroSection() {
   return (
@@ -102,6 +103,9 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Decorative Bottom Scroll Indicator */}
+      <ScrollDownIndicator />
     </section>
   );
 }

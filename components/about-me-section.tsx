@@ -1,8 +1,6 @@
 "use client";
 
 import { motion, type Variants } from "motion/react";
-import DecryptedText from "./animated-texts/DecryptedText";
-import { ROLES } from "@/data/general";
 import RoleCardsDeck from "./role-cards-deck";
 import SectionHeader from "./section-header";
 
@@ -42,7 +40,7 @@ export default function AboutMeSection() {
         viewport={{ once: true, amount: 0.15 }}
         className="flex flex-col gap-16"
       >
-        <SectionHeader title={"About Me"} subtitle="01 // Introduction" />
+        <SectionHeader title={"About Me"} />
 
         {/* Main Bio + Focus Grid */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">

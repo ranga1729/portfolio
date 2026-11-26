@@ -8,7 +8,7 @@ export default function WorkExperienceSection() {
       id="experience"
       className="w-full scroll-mt-20 border-t border-border px-6 sm:px-16 py-24"
     >
-      <SectionHeader subtitle="02 // Experience" title="Experience" />
+      <SectionHeader title="Experience" />
 
       <div className="flex flex-col gap-8 mt-8">
         {WORK_EXPERIENCES.map((experience, expIndex) => (

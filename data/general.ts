@@ -1,5 +1,5 @@
-import { EducationItem, ExperienceItem, ProjectItem } from "@/types/general";
-import { Award, Book, BookCheck, BookOpen, Briefcase, Certificate, Code2, EthernetPort, GraduationCap, Music, Network } from "lucide-react";
+import { ArticleItem, EducationItem, ExperienceItem, ProjectItem } from "@/types/general";
+import { Book, BookCheck, BookOpen, Certificate, Code2, EthernetPort, GraduationCap, Music } from "lucide-react";
 
 export const NAV_ITEMS = [
   { label: "Projects", href: "/#projects" },
@@ -465,5 +465,60 @@ export const TECH_STACKS: TechStackItem[] = [
     category: "Deployment",
     iconUrl: "https://cdn.simpleicons.org/render/FFFFFF",
     ring: "outer",
+  },
+];
+
+export const ARTICLES: ArticleItem[] = [
+  {
+    title:
+      "How AI Learns: A Beginner’s Guide to Linear Regression, Cost Functions, and Gradient Descent",
+    description:
+      "An intuitive breakdown of the mathematical foundations behind machine learning—exploring how models predict values with linear regression, measure error using cost functions, and optimize parameters via gradient descent.",
+    coverImage: "/images/articles/how_ai_learns.webp",
+    url: "https://rangamudunkotuwa1729.medium.com/how-ai-learns-a-beginners-guide-to-linear-regression-cost-functions-and-gradient-descent-cbe25cbd04ba?sharedUserId=rangamudunkotuwa1729",
+  },
+  {
+    title:
+      "Why I Stopped Writing useEffect for Data Fetching (And What I Use Instead)",
+    description:
+      "A practical look at the pitfalls of manual useEffect data fetching—such as race conditions, waterfall requests, and boilerplate state management—and modern declarative alternatives for cleaner React applications.",
+    coverImage: "/images/articles/react_query.webp",
+    url: "https://rangamudunkotuwa1729.medium.com/why-i-stopped-writing-useeffect-for-data-fetching-and-what-i-use-instead-8974fb43725c?sharedUserId=rangamudunkotuwa1729",
+  },
+  {
+    title:
+      "A Beginner’s Guide to Machine Learning: Concepts, Categories, and Real-World Applications",
+    description:
+      "A structured introduction to core machine learning paradigms—covering supervised, unsupervised, and reinforcement learning alongside practical real-world industry use cases.",
+    coverImage: "/images/articles/ml_beginner.webp",
+    url: "https://rangamudunkotuwa1729.medium.com/a-beginners-guide-to-machine-learning-concepts-categories-and-real-world-applications-cd4994a4ee11?sharedUserId=rangamudunkotuwa1729",
+  },
+  {
+    title: "The Story of WPA2 Wi-Fi",
+    description:
+      "An exploration of wireless network security—tracing the evolution from WEP and WPA to WPA2, AES-CCMP encryption, and the 4-way handshake that secures modern Wi-Fi connections.",
+    coverImage: "/images/articles/wpa2_security.webp",
+    url: "https://rangamudunkotuwa1729.medium.com/the-story-of-wpa2-wi-fi-c94d6f9fbd74?sharedUserId=rangamudunkotuwa1729",
+  },
+  {
+    title: "MD5 Hashing Algorithm",
+    description:
+      "A deep dive into how the MD5 message-digest algorithm processes arbitrary data into 128-bit hashes, its internal bit-manipulation rounds, and why cryptographic collision vulnerabilities led to its deprecation.",
+    coverImage: "/images/articles/md5_hashing.webp",
+    url: "https://rangamudunkotuwa1729.medium.com/md5-hashing-algorithm-721464ce9f73?sharedUserId=rangamudunkotuwa1729",
+  },
+  {
+    title: "Nyquist-Shannon Theory of Signal Sampling",
+    description:
+      "Understanding the bridge between continuous analog signals and discrete digital systems—explaining sampling rates, the Nyquist limit, and how aliasing occurs when signals are undersampled.",
+    coverImage: "/images/articles/nyquist_shannon.webp",
+    url: "https://rangamudunkotuwa1729.medium.com/nyquist-shannon-theory-of-signal-sampling-25c9d4ebefc6?sharedUserId=rangamudunkotuwa1729",
+  },
+  {
+    title: "Beauty of the Skip List Data Structure",
+    description:
+      "How probabilistic multi-level linked lists achieve O(log n) search, insertion, and deletion performance without the complex rebalancing overhead of balanced binary search trees.",
+    coverImage: "/images/articles/skip_list.webp",
+    url: "https://rangamudunkotuwa1729.medium.com/beauty-of-the-skip-list-data-structure-df5ffbdb867d?sharedUserId=rangamudunkotuwa1729",
   },
 ];

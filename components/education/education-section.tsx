@@ -11,7 +11,7 @@ export default function EducationSection() {
       className="w-full scroll-mt-20 border-t border-border px-6 py-24 sm:px-16"
     >
       <div className="flex flex-col gap-16">
-        <SectionHeader subtitle="03 // Education" title="Education" />
+        <SectionHeader title="Education" />
         <EducationTimeline items={EDUCATION_HISTORY} />
       </div>
     </section>

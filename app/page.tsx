@@ -1,4 +1,5 @@
 import AboutMeSection from "@/components/about-me-section";
+import ArticlesSection from "@/components/articles/articles-section";
 import EducationSection from "@/components/education/education-section";
 import HeroSection from "@/components/hero-section";
 import ProfileImage from "@/components/profile-image";
@@ -17,6 +18,7 @@ export default function Home() {
         <EducationSection />
         <ProjectsSection />
         <TechStackSection />
+        <ArticlesSection />
         <p className="border w-full text-center h-100">
           Other content
         </p>

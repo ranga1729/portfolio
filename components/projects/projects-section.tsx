@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       className="w-full scroll-mt-20 border-t border-border px-6 py-24 sm:px-16"
     >
       <div className="flex flex-col gap-12">
-        <SectionHeader subtitle="04 // Projects" title="Projects" />
+        <SectionHeader title="Projects" />
         <ProjectsGrid projects={PROJECTS} />
       </div>
     </section>

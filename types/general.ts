@@ -38,3 +38,17 @@ export interface ProjectItem {
   techStack: string[];
   githubUrl: string;
 }
+
+export interface ArticleItem {
+  title: string;
+  description: string;
+  coverImage: string;
+  url: string;
+}
+
+export interface RoleItem {
+  index: string;
+  title: string;
+  tag?: string;
+  description: string;
+}

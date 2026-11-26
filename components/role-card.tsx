@@ -2,15 +2,7 @@
 
 import type { MouseEvent } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
-import type { LucideIcon } from "lucide-react";
-
-export interface RoleItem {
-  index: string;
-  title: string;
-  icon: LucideIcon;
-  tag?: string;
-  description: string;
-}
+import { RoleItem } from "@/types/general";
 
 interface RoleCardProps {
   role: RoleItem;
@@ -25,7 +17,7 @@ export default function RoleCard({
   stackPosition,
   onSelect,
 }: RoleCardProps) {
-  const { index, title, icon: Icon, description } = role;
+  const { index, title, description } = role;
 
   // Subtle 3D tilt values for the active front card
   const mouseX = useMotionValue(0);
@@ -88,10 +80,6 @@ export default function RoleCard({
         <span className="font-mono text-xs tracking-widest text-muted-foreground">
           {index}
         </span>
-
-        <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-background/80 text-muted-foreground transition-colors duration-300 group-hover:border-accent group-hover:text-foreground">
-          <Icon className="h-4 w-4" />
-        </div>
       </div>
 
       {/* Bottom Row: Role Title + Description */}

@@ -8,7 +8,7 @@ export default function ArticleCardBody({
   description,
 }: ArticleCardBodyProps) {
   return (
-    <div className="mt-4">
+    <div className="mt-1">
       <h3 className="font-heading text-lg font-semibold leading-snug tracking-tight text-foreground transition-colors duration-300 group-hover:text-white sm:text-xl">
         {title}
       </h3>

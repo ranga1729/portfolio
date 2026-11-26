@@ -3,6 +3,7 @@ import SideRays from "../background/SideRays";
 import DecryptedText from "../animated-texts/DecryptedText";
 import RotatingText from "../animated-texts/RotatingText";
 import ScrollDownIndicator from "../scroll-down-indicator";
+import ShapeWaves from "../ShapeWaves";
 
 export default function HeroSection() {
   return (
@@ -32,7 +33,7 @@ export default function HeroSection() {
           fade={0}
           lightMode={false}
         /> */}
-        <SideRays
+        {/* <SideRays
           rayColor1="#FFC46B"
           rayColor2="#96c8ff"
           origin="top-right"
@@ -52,6 +53,32 @@ export default function HeroSection() {
           intro
           lightMode={false}
           opacity={1}
+        /> */}
+        <ShapeWaves
+          text="1729"
+          fontFamily='Geist, "Geist Sans", system-ui, sans-serif'
+          fontWeight={500}
+          textSize={0.6}
+          shapes="mixed"
+          cellSize={10}
+          dotSize={0.75}
+          color="#292931"
+          hoverColor="#28282c"
+          backgroundColor="#1b1b1d"
+          speed={1}
+          scale={1}
+          contrast={1}
+          brightness={0.4}
+          flow={0}
+          direction={0}
+          fade={0.25}
+          interactive
+          splashRadius={40}
+          splashStrength={0.4}
+          glow={0.35}
+          intro
+          introDuration={1.6}
+          paused={false}
         />
       </div>
 

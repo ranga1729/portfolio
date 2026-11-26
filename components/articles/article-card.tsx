@@ -31,7 +31,7 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
         <ArticleCardCover src={article.coverImage} alt={article.title} />
 
         <div className="flex flex-1 flex-col p-6">
-          <ArticleCardHeader index={index} />
+          {/* <ArticleCardHeader index={index} /> */}
           <ArticleCardBody
             title={article.title}
             description={article.description}

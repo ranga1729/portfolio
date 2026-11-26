@@ -1,8 +1,9 @@
 "use client";
 
 import type { MouseEvent } from "react";
+import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
-import { RoleItem } from "@/types/general";
+import type { RoleItem } from "@/types/general";
 
 interface RoleCardProps {
   role: RoleItem;
@@ -17,7 +18,7 @@ export default function RoleCard({
   stackPosition,
   onSelect,
 }: RoleCardProps) {
-  const { index, title, description } = role;
+  const { title, image, tag } = role;
 
   // Subtle 3D tilt values for the active front card
   const mouseX = useMotionValue(0);
@@ -53,7 +54,6 @@ export default function RoleCard({
           ? { rotateX, rotateY, transformStyle: "preserve-3d" }
           : undefined
       }
-      // Subtle deterministic ambient floating drift
       animate={{
         y: [0, -5, 0],
       }}
@@ -63,7 +63,7 @@ export default function RoleCard({
         ease: "easeInOut",
         delay: stackPosition * 0.45,
       }}
-      className={`group relative flex h-full w-full select-none flex-col justify-between rounded-2xl border bg-card p-6 sm:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.65)] transition-colors duration-300 ${
+      className={`group relative flex h-full w-full select-none flex-col rounded-2xl border bg-card p-2.5 sm:p-3 shadow-[0_20px_50px_rgba(0,0,0,0.65)] transition-colors duration-300 ${
         isActive
           ? "cursor-grab border-border hover:border-accent active:cursor-grabbing"
           : "cursor-pointer border-border/80 hover:border-accent/80"
@@ -75,21 +75,27 @@ export default function RoleCard({
         className="pointer-events-none absolute inset-x-6 top-0 h-px bg-linear-to-r from-transparent via-foreground/20 to-transparent"
       />
 
-      {/* Top Row: Index + Minimal Icon Badge */}
-      <div className="flex items-center justify-between">
-        <span className="font-mono text-xs tracking-widest text-muted-foreground">
-          {index}
-        </span>
+      {/* Visual Slot (Hugs card border with minimal inset) */}
+      <div className="relative w-full flex-1 overflow-hidden rounded-xl border border-border/60 bg-background">
+        <Image
+          src={image}
+          alt={`${title} role illustration`}
+          fill
+          draggable={false}
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
 
-      {/* Bottom Row: Role Title + Description */}
-      <div className="mt-8">
-        <h3 className="font-heading text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+      {/* Bottom Row: Role Title + Tag */}
+      <div className="flex items-baseline justify-between gap-3 px-1.5 pt-3 pb-1">
+        <h3 className="font-heading text-lg font-semibold tracking-tight text-foreground sm:text-xl">
           {title}
         </h3>
-        <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
-          {description}
-        </p>
+        {tag && (
+          <span className="truncate font-mono text-xs text-muted-foreground">
+            {tag}
+          </span>
+        )}
       </div>
     </motion.div>
   );

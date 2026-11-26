@@ -1,4 +1,4 @@
-import { ArticleItem, EducationItem, ExperienceItem, ProjectItem } from "@/types/general";
+import { ArticleItem, EducationItem, ExperienceItem, ProjectItem, RoleItem } from "@/types/general";
 import { Book, BookCheck, BookOpen, Certificate, Code2, EthernetPort, GraduationCap, Music } from "lucide-react";
 
 export const NAV_ITEMS = [
@@ -17,38 +17,26 @@ export const TECH_STACK = [
   "Node.js",
 ];
 
-export const ROLES = [
+export const ROLES: RoleItem[] = [
   {
-    index: "01",
     title: "Developer",
-    icon: Code2,
-    tag: "ASP.NET Core • React • AI",
-    description:
-      "Architecting multi-tenant APIs, Clean Architecture backends, and real-time AI integrations (RAG, Gemini Live API, MCP) built for production reliability.",
+    image: "/images/roles/developer.webp",
+    tag: "ASP.NET Core • React/Next • AI",
   },
   {
-    index: "02",
     title: "Teacher",
-    icon: BookOpen,
-    tag: "Workshops • Technical Writing",
-    description:
-      "Leading hands-on developer workshops—including Git & Version Control sessions at USJP—and publishing technical articles on Medium.",
+    image: "/images/roles/teacher.webp",
+    tag: "ICT • Technical Writing",
   },
   {
-    index: "03",
     title: "Student",
-    icon: GraduationCap,
-    tag: "UCSC • Cisco CCNA",
-    description:
-      "Reading for a Bachelor of Information Technology at UCSC (3.81 GPA) alongside Cisco CCNA networking coursework at the University of Moratuwa.",
+    image: "/images/roles/student.webp",
+    tag: "Masters • Cisco CCNA",
   },
   {
-    index: "04",
     title: "Guitarist",
-    icon: Music,
-    tag: "Fingerstyle • Rhythm",
-    description:
-      "Stepping away from system design and terminal windows to practice fingerstyle arrangements, chord voicings, and rhythm.",
+    image: "/images/roles/guitarist.webp",
+    tag: "Just For Fun",
   },
 ];
 

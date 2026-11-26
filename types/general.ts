@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react/types";
+import { StaticImageData } from "next/image";
 
 export interface HighlightItem {
   lead: string;
@@ -47,8 +48,7 @@ export interface ArticleItem {
 }
 
 export interface RoleItem {
-  index: string;
   title: string;
+  image: StaticImageData | string;
   tag?: string;
-  description: string;
 }

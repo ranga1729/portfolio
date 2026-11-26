@@ -144,7 +144,7 @@ export default function RoleCardsDeck() {
                     : "border-transparent text-muted-foreground hover:border-border hover:text-foreground"
                 }`}
               >
-                {role.index}
+                {String(idx + 1).padStart(2, "0")}
               </button>
             );
           })}

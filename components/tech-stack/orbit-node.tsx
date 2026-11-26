@@ -65,7 +65,7 @@ export default function OrbitNode({
             alt={item.name}
             loading="lazy"
             draggable={false}
-            className="h-6 w-6 object-contain opacity-85 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-focus-visible:opacity-100 group-focus-visible:grayscale-0"
+            className="h-6 w-6 object-contain opacity-85 grayscale-25 transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-focus-visible:opacity-100 group-focus-visible:grayscale-0"
           />
         </button>
 

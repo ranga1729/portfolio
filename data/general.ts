@@ -26,7 +26,7 @@ export const ROLES: RoleItem[] = [
   {
     title: "Teacher",
     image: "/images/roles/teacher.webp",
-    tag: "ICT • Technical Writing",
+    tag: "OL/AL ICT Tutor",
   },
   {
     title: "Student",

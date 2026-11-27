@@ -62,7 +62,7 @@ export default function HeroSection() {
           shapes="mixed"
           cellSize={10}
           dotSize={0.75}
-          color="#292931"
+          color="#232b47"
           hoverColor="#aaaaaa"
           backgroundColor="#1b1b1d"
           speed={1}

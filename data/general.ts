@@ -1,4 +1,4 @@
-import { ArticleItem, EducationItem, ExperienceItem, ProjectItem, RoleItem, SocialLinkItem } from "@/types/general";
+import { ArticleItem, EducationItem, ExperienceItem, InstituteItem, ProjectItem, RoleItem, SocialLinkItem } from "@/types/general";
 import { Book, BookCheck, Certificate, EthernetPort, GraduationCap } from "lucide-react";
 import { SiFacebook, SiGithub, SiInstagram, SiMedium, SiLinkerd } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
@@ -549,5 +549,83 @@ export const SOCIAL_LINKS: SocialLinkItem[] = [
     label: "Medium",
     href: "https://medium.com/@rangamudunkotuwa1729",
     icon: SiMedium,
+  },
+];
+
+export const INSTITUTE_SCHEDULES: InstituteItem[] = [
+  {
+    id: "siyes",
+    name: "Siyes Institute",
+    location: "Homagama",
+    // Add the institute logo under public/images/institutes/
+    logo: "/images/institutes/siyes.jpg",
+
+    // Add the official institute phone number.
+    // phone: "+94XXXXXXXXX",
+
+    // Replace with the actual Google Maps share URL.
+    // mapUrl: "https://maps.app.goo.gl/...",
+
+    schedules: [
+      {
+        day: "Thursday",
+        sessions: [
+          {
+            grade: "Grade 06 + Grade 07",
+            time: "5:00 PM – 7:00 PM",
+          },
+        ],
+      },
+      {
+        day: "Friday",
+        sessions: [
+          {
+            grade: "Grade 08",
+            time: "5:00 PM – 7:00 PM",
+          },
+        ],
+      },
+      {
+        day: "Sunday",
+        sessions: [
+          {
+            grade: "Grade 09",
+            time: "2:00 PM – 4:00 PM",
+          },
+          {
+            grade: "Grade 10",
+            time: "4:00 PM – 6:00 PM",
+          },
+          {
+            grade: "Grade 11",
+            time: "6:00 PM – 8:30 PM",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "thakshila",
+    name: "Thakshila Institute",
+    location: "Habarakada",
+    logo: "/images/institutes/thakshila.jpeg",
+
+    // Add phone and Google Maps URL when available.
+
+    schedules: [
+      {
+        day: "Saturday",
+        sessions: [
+          {
+            grade: "Grade 10",
+            time: "12:00 PM – 3:00 PM",
+          },
+          {
+            grade: "Grade 11",
+            time: "6:00 PM – 8:30 PM",
+          },
+        ],
+      },
+    ],
   },
 ];

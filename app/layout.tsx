@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${hostGrotesk.variable} dark h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body className="min-h-full flex flex-col bg-background text-foreground items-center justify-center">
         <Header />
         {children}
         <Footer />

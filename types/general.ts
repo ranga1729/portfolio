@@ -59,3 +59,23 @@ export interface SocialLinkItem {
   href: string;
   icon: IconType;
 }
+
+export interface ClassSessionItem {
+  grade: string;
+  time: string;
+}
+
+export interface ClassDaySchedule {
+  day: string;
+  sessions: ClassSessionItem[];
+}
+
+export interface InstituteItem {
+  id: string;
+  name: string;
+  location: string;
+  logo?: string;
+  phone?: string;
+  mapUrl?: string;
+  schedules: ClassDaySchedule[];
+}

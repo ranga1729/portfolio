@@ -52,3 +52,9 @@ export interface RoleItem {
   image: StaticImageData | string;
   tag?: string;
 }
+
+export interface SocialLinkItem {
+  label: string;
+  href: string;
+  image: string;
+}

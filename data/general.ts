@@ -1,4 +1,4 @@
-import { ArticleItem, EducationItem, ExperienceItem, ProjectItem, RoleItem } from "@/types/general";
+import { ArticleItem, EducationItem, ExperienceItem, ProjectItem, RoleItem, SocialLinkItem } from "@/types/general";
 import { Book, BookCheck, Certificate, EthernetPort, GraduationCap } from "lucide-react";
 
 export const ABOUTE_ME_MAIN_TEXT = `
@@ -519,5 +519,38 @@ export const ARTICLES: ArticleItem[] = [
       "How probabilistic multi-level linked lists achieve O(log n) search, insertion, and deletion performance without the complex rebalancing overhead of balanced binary search trees.",
     coverImage: "/images/articles/skip_list.webp",
     url: "https://rangamudunkotuwa1729.medium.com/beauty-of-the-skip-list-data-structure-df5ffbdb867d?sharedUserId=rangamudunkotuwa1729",
+  },
+];
+
+export const SOCIAL_LINKS: SocialLinkItem[] = [
+  {
+    label: "Facebook",
+    href: "https://facebook.com/ranga1729",
+    image:
+      "https://static.cdnlogo.com/logos/f/35/facebook.png",
+  },
+  {
+    label: "Instagram",
+    href: "https://instagram.com/ranga1729",
+    image:
+      "https://static.cdnlogo.com/logos/i/92/instagram.svg",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/rangabandara1729",
+    image:
+      "https://static.cdnlogo.com/logos/l/66/linkedin-icon.svg",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/ranga1729",
+    image:
+      "https://static.cdnlogo.com/logos/g/69/github-icon.svg",
+  },
+  {
+    label: "Medium",
+    href: "https://rangamudunkotuwa1729.medium.com",
+    image:
+      "https://static.cdnlogo.com/logos/m/21/monogram-medium.svg",
   },
 ];

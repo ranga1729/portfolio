@@ -1,5 +1,7 @@
 import { ArticleItem, EducationItem, ExperienceItem, ProjectItem, RoleItem, SocialLinkItem } from "@/types/general";
 import { Book, BookCheck, Certificate, EthernetPort, GraduationCap } from "lucide-react";
+import { SiFacebook, SiGithub, SiInstagram, SiMedium, SiLinkerd } from "react-icons/si";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 export const ABOUTE_ME_MAIN_TEXT = `
   I'm a Full-stack Software Engineer specializing in ASP.NET Core, React.js, and production AI integrations. 
@@ -525,32 +527,27 @@ export const ARTICLES: ArticleItem[] = [
 export const SOCIAL_LINKS: SocialLinkItem[] = [
   {
     label: "Facebook",
-    href: "https://facebook.com/ranga1729",
-    image:
-      "https://static.cdnlogo.com/logos/f/35/facebook.png",
+    href: "https://www.facebook.com/ranga1729/",
+    icon: SiFacebook,
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/ranga1729",
-    image:
-      "https://static.cdnlogo.com/logos/i/92/instagram.svg",
+    href: "https://www.instagram.com/_ranga1729/",
+    icon: SiInstagram,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/rangabandara1729",
-    image:
-      "https://static.cdnlogo.com/logos/l/66/linkedin-icon.svg",
+    href: "https://www.linkedin.com/in/rangabandara1729/",
+    icon: SlSocialLinkedin,
   },
   {
     label: "GitHub",
     href: "https://github.com/ranga1729",
-    image:
-      "https://static.cdnlogo.com/logos/g/69/github-icon.svg",
+    icon: SiGithub,
   },
   {
     label: "Medium",
-    href: "https://rangamudunkotuwa1729.medium.com",
-    image:
-      "https://static.cdnlogo.com/logos/m/21/monogram-medium.svg",
+    href: "https://medium.com/@rangamudunkotuwa1729",
+    icon: SiMedium,
   },
 ];

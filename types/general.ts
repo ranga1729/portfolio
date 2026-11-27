@@ -1,5 +1,6 @@
 import { LucideIcon } from "lucide-react/types";
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export interface HighlightItem {
   lead: string;
@@ -56,5 +57,5 @@ export interface RoleItem {
 export interface SocialLinkItem {
   label: string;
   href: string;
-  image: string;
+  icon: IconType;
 }

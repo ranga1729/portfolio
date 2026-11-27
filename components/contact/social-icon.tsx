@@ -1,26 +1,71 @@
+
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import type { SocialLinkItem } from "@/types/general";
 
-export default function SocialIcon({ label, href, image }: SocialLinkItem) {
+export default function SocialIcon({
+  label,
+  href,
+  icon: Icon,
+}: SocialLinkItem) {
   return (
     <Link
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Visit Ranga Mudunkotuwa on ${label}`}
-      className="group flex flex-col items-center gap-2.5 focus-visible:outline-none"
+      className="
+        group relative flex min-h-28 flex-col
+        items-center justify-center gap-3
+        rounded-xl border border-white/8
+        bg-white/2.5 px-4 py-6
+        transition-all duration-300 ease-out
+        hover:-translate-y-1
+        hover:border-blue-400/40
+        hover:bg-white/[0.07]
+        hover:shadow-[0_12px_35px_rgba(37,99,235,0.10)]
+        focus-visible:outline-none
+        focus-visible:ring-2
+        focus-visible:ring-blue-400
+        focus-visible:ring-offset-2
+        focus-visible:ring-offset-[#08090D]
+      "
     >
-      {/* White Circular Badge */}
-      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-foreground shadow-[0_6px_20px_rgba(255,255,255,0.08)] ring-2 ring-transparent transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-105 group-hover:bg-[#F5F5F5] group-hover:shadow-[0_10px_28px_rgba(255,255,255,0.18)] group-hover:ring-accent/60 group-focus-visible:ring-ring">
-        <img
-          src={image}
-          alt={`${label} logo`}
-          className="h-9 w-9 object-contain transition-transform duration-300 group-hover:scale-110"
-        />
-      </div>
+      {/* External Link Indicator */}
+      <ArrowUpRight
+        size={14}
+        className="
+          absolute right-3 top-3
+          text-zinc-600 opacity-0
+          transition-all duration-300
+          group-hover:-translate-y-0.5
+          group-hover:translate-x-0.5
+          group-hover:text-blue-400
+          group-hover:opacity-100
+        "
+      />
 
-      {/* Label Below Icon */}
-      <span className="font-mono text-xs tracking-wide text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+      {/* Social Icon */}
+      <Icon
+        size={25}
+        aria-hidden="true"
+        className="
+          text-zinc-400
+          transition-all duration-300
+          group-hover:scale-110
+          group-hover:text-white
+        "
+      />
+
+      {/* Social Name */}
+      <span
+        className="
+          font-mono text-xs tracking-wide
+          text-zinc-500
+          transition-colors duration-300
+          group-hover:text-zinc-200
+        "
+      >
         {label}
       </span>
     </Link>

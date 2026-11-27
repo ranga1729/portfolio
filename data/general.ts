@@ -1,5 +1,16 @@
 import { ArticleItem, EducationItem, ExperienceItem, ProjectItem, RoleItem } from "@/types/general";
-import { Book, BookCheck, BookOpen, Certificate, Code2, EthernetPort, GraduationCap, Music } from "lucide-react";
+import { Book, BookCheck, Certificate, EthernetPort, GraduationCap } from "lucide-react";
+
+export const ABOUTE_ME_MAIN_TEXT = `
+  I'm a Full-stack Software Engineer specializing in ASP.NET Core, React.js, and production AI integrations. 
+  I'm experienced in architecting scalable, multi-tenant applications and deploying secure backend infrastructure with a 
+  Proven track record of translating complex business requirements into production-ready systems with a strong emphasis on clean architecture, system reliability, and code quality.
+`
+
+export const ABOUTE_ME_SUB_TEXT = `
+  Outside of shipping code and studies, I enjoy writing technical articles, teaching, and picking up my guitar.
+  Also I'm a free-thinker, freedom seeker, and a nature lover.
+`
 
 export const NAV_ITEMS = [
   { label: "Projects", href: "/#projects" },

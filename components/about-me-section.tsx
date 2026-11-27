@@ -3,6 +3,7 @@
 import { motion, type Variants } from "motion/react";
 import RoleCardsDeck from "./hero/role-cards-deck";
 import SectionHeader from "./section-header";
+import { ABOUTE_ME_MAIN_TEXT, ABOUTE_ME_SUB_TEXT } from "@/data/general";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -43,7 +44,7 @@ export default function AboutMeSection() {
         <SectionHeader title={"About Me"} />
 
         {/* Main Bio + Focus Grid */}
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 items-center justify-center">
           {/* Left Column: Narrative Bio + Highlights + Tech Stack */}
           <motion.div
             variants={itemVariants}
@@ -51,12 +52,7 @@ export default function AboutMeSection() {
           >
             <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
               <p className="text-lg font-medium text-foreground text-justify">
-                I'm a Full-stack Software Engineer specializing in ASP.NET Core, React.js, and production AI integrations. 
-                I'm experienced in architecting scalable, multi-tenant applications and deploying secure backend infrastructure 
-                with a Proven track record of translating complex business requirements into production-ready systems with a strong emphasis on clean architecture, system reliability, and code quality. 
-              </p>
-              <p>
-                Outside of shipping code and studies, I enjoy writing technical articles, teaching, and picking up my guitar.
+                {ABOUTE_ME_MAIN_TEXT}
               </p>
             </div>
           </motion.div>
@@ -73,6 +69,9 @@ export default function AboutMeSection() {
             <RoleCardsDeck />
           </motion.div>
           </motion.div>
+        </div>
+        <div className="mx-20 text-center">
+          <p> {ABOUTE_ME_SUB_TEXT} </p>
         </div>
       </motion.div>
     </section>

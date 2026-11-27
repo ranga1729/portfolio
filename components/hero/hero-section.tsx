@@ -58,12 +58,12 @@ export default function HeroSection() {
           text="1729"
           fontFamily='Geist, "Geist Sans", system-ui, sans-serif'
           fontWeight={500}
-          textSize={0.6}
+          textSize={1}
           shapes="mixed"
           cellSize={10}
           dotSize={0.75}
           color="#292931"
-          hoverColor="#28282c"
+          hoverColor="#aaaaaa"
           backgroundColor="#1b1b1d"
           speed={1}
           scale={1}
@@ -77,7 +77,7 @@ export default function HeroSection() {
           splashStrength={0.4}
           glow={0.35}
           intro
-          introDuration={1.6}
+          introDuration={2}
           paused={false}
         />
       </div>

@@ -1,6 +1,22 @@
 import ClassScheduleHeader from "@/components/class/class-schedule-header";
 import InstituteCard from "@/components/class/institute-card";
 import { INSTITUTE_SCHEDULES } from "@/data/general";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "O/L ICT Class Schedule (2027) — Homagama & Habarakada",
+  description:
+    "Weekly G.C.E. Ordinary Level (O/L) ICT class schedules by Ranga Mudunkotuwa for Grades 06–11 at Siyes Institute (Homagama) and Thakshila Institute (Habarakada). Call 0772123123 for inquiries.",
+  alternates: {
+    canonical: "/class",
+  },
+  openGraph: {
+    title: "O/L ICT Class Schedule | Ranga Mudunkotuwa",
+    description:
+      "Grades 06–11 ICT class timetables at Siyes Institute (Homagama) and Thakshila Institute (Habarakada).",
+    url: "/class",
+  },
+};
 
 export default function ClassSchedulePage() {
   return (

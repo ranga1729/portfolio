@@ -1,0 +1,42 @@
+# Ranga Mudunkotuwa
+
+> Full-Stack Software Engineer specializing in ASP.NET Core, React/Next.js, and production AI integrations (RAG, Gemini API, MCP), and G.C.E. Ordinary Level (O/L) ICT Tutor based in Sri Lanka.
+
+## Summary
+Ranga Mudunkotuwa (DMRB Mudunkotuwa) is a Bachelor of Information Technology (B.I.T.) undergraduate at the University of Colombo School of Computing (UCSC, 3.81 GPA) and a Cisco CCNA student at the University of Moratuwa. Alongside his industry experience as an Intern Software Developer at FACTn Software and Calcey Technologies, he teaches local G.C.E. Ordinary Level (O/L) Information & Communication Technology (ICT) for Grades 06–11 in Homagama and Habarakada.
+
+## ICT Teaching & Class Schedules (O/L ICT — 2027 Batch)
+Full timetable and institute locations: https://your-project.vercel.app/class
+Inquiries Phone: +94 77 212 3123 (0772123123)
+
+- **Siyes Institute — Homagama**
+  - Thursday: Grade 06 + Grade 07 (5:00 PM – 7:00 PM)
+  - Friday: Grade 08 (5:00 PM – 7:00 PM)
+  - Sunday: Grade 09 (2:00 PM – 4:00 PM), Grade 10 (4:00 PM – 6:00 PM), Grade 11 (6:00 PM – 8:30 PM)
+- **Thakshila Institute — Habarakada**
+  - Saturday: Grade 10 (12:00 PM – 3:00 PM), Grade 11 (6:00 PM – 8:30 PM)
+
+## Software Engineering Experience
+- **FACTn Software** — Intern Software Developer: Architected ChatN (multi-tenant AI API Gateway unifying OpenAI and Google Gemini APIs with Redis state tracking, Azure AI Search RAG pipelines, and MCP tool integration) and MyDrive (Flutter/React automotive platform with Gemini Live API voice chat).
+- **Calcey Technologies** — Intern Software Developer: Built full-stack ASP.NET Core and React.js features and optimized PostgreSQL queries for Fresh Fitness Food (FFF).
+
+## Selected Projects
+- **Koa - Clothing**: Full-stack e-commerce platform using Next.js, TypeScript, ASP.NET Core Web API, CQRS/MediatR, PostgreSQL, and Azure Communication Service.
+- **FaceTrack**: Facial recognition attendance system built with Python, Flask, OpenCV, and SQLite.
+- **Wine Analytics Dashboard (NLP)**: Sentiment analysis and interactive visualization dashboard using Python, NLTK, Hugging Face Transformers, and Plotly Dash.
+
+## Technical Writing (Medium)
+- How AI Learns: A Beginner’s Guide to Linear Regression, Cost Functions, and Gradient Descent
+- Why I Stopped Writing useEffect for Data Fetching (And What I Use Instead)
+- A Beginner’s Guide to Machine Learning: Concepts, Categories, and Real-World Applications
+- The Story of WPA2 Wi-Fi
+- MD5 Hashing Algorithm
+- Nyquist-Shannon Theory of Signal Sampling
+- Beauty of the Skip List Data Structure
+
+## Official Profiles
+- Website: https://your-project.vercel.app
+- Class Schedule: https://your-project.vercel.app/class
+- GitHub: https://github.com/ranga1729
+- LinkedIn: https://www.linkedin.com/in/rangabandara1729
+- Medium: https://rangamudunkotuwa1729.medium.com

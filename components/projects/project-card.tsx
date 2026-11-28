@@ -28,7 +28,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         aria-label={`View ${project.title} repository on GitHub`}
         className="group flex h-full flex-col rounded-xl border border-border bg-card/70 p-6 transition-colors duration-300 hover:border-accent focus-visible:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
-        <ProjectCardHeader index={index} />
+        {/* <ProjectCardHeader index={index} /> */}
 
         <div className="mb-6 flex-1">
           <ProjectCardBody

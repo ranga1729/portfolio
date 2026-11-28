@@ -39,7 +39,7 @@ export default function ProfileImage() {
       >
         <Image
           src={profile}
-          alt="Profile Image"
+          alt="Ranga Mudunkotuwa - Full-Stack Software Engineer | ICT Tutor"
           className="w-full h-auto object-cover block"
           priority
         />

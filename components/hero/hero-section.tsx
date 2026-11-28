@@ -1,5 +1,3 @@
-import Lightfall from "../background/Lightfall";
-import SideRays from "../background/SideRays";
 import DecryptedText from "../animated-texts/DecryptedText";
 import RotatingText from "../animated-texts/RotatingText";
 import ScrollDownIndicator from "../scroll-down-indicator";
@@ -9,51 +7,6 @@ export default function HeroSection() {
   return (
     <section className="relative w-full min-h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        {/* <Lightfall
-          colors={["#E0E0E0", "#888888"]}
-          backgroundColor="#121212"
-          speed={0.3}
-          streakCount={2}
-          streakWidth={0.8}
-          twinkle={0.3}
-          backgroundGlow={0.1}
-          headGlow={0.6}
-          bloom={0.35}
-          mouseInteraction
-          holdToWarp
-          intro
-          streakLength={1}
-          density={0.6}
-          glow={1}
-          depth={0.5}
-          zoom={3}
-          mouseStrength={0.4}
-          mouseRadius={0.45}
-          lens={0.5}
-          fade={0}
-          lightMode={false}
-        /> */}
-        {/* <SideRays
-          rayColor1="#FFC46B"
-          rayColor2="#96c8ff"
-          origin="top-right"
-          speed={2.5}
-          intensity={2}
-          spread={2}
-          density={5}
-          followMouse
-          blend={0.6}
-          sharpness={0.5}
-          tilt={0}
-          falloff={1.6}
-          glow={2}
-          saturation={1}
-          dust={0}
-          mouseInfluence={0.5}
-          intro
-          lightMode={false}
-          opacity={1}
-        /> */}
         <ShapeWaves
           text="1729"
           fontFamily='Geist, "Geist Sans", system-ui, sans-serif'

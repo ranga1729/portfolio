@@ -552,20 +552,15 @@ export const SOCIAL_LINKS: SocialLinkItem[] = [
   },
 ];
 
+
 export const INSTITUTE_SCHEDULES: InstituteItem[] = [
   {
     id: "siyes",
     name: "Siyes Institute",
     location: "Homagama",
-    // Add the institute logo under public/images/institutes/
     logo: "/images/institutes/siyes.jpg",
-
-    // Add the official institute phone number.
-    // phone: "+94XXXXXXXXX",
-
-    // Replace with the actual Google Maps share URL.
-    // mapUrl: "https://maps.app.goo.gl/...",
-
+    phone: "+0768807675",
+    mapUrl: "https://maps.app.goo.gl/QxRadp6KRAQ5mqu58",
     schedules: [
       {
         day: "Thursday",
@@ -609,13 +604,28 @@ export const INSTITUTE_SCHEDULES: InstituteItem[] = [
     name: "Thakshila Institute",
     location: "Habarakada",
     logo: "/images/institutes/thakshila.jpeg",
-
-    // Add phone and Google Maps URL when available.
-
+    phone: "+94769622770",
+    mapUrl: "https://maps.app.goo.gl/N4bCatEuRj4p2Pxt9",
     schedules: [
       {
         day: "Saturday",
         sessions: [
+          {
+            grade: "Grade 6",
+            time: "9:30 AM – 11:30 AM"
+          },
+          {
+            grade: "Grade 7",
+            time: "Not Finalized"
+          },
+          {
+            grade: "Grade 8",
+            time: "Not Finalized"
+          },
+          {
+            grade: "Grade 9",
+            time: "Not Finalized"
+          },
           {
             grade: "Grade 10",
             time: "12:00 PM – 3:00 PM",
@@ -629,3 +639,6 @@ export const INSTITUTE_SCHEDULES: InstituteItem[] = [
     ],
   },
 ];
+
+export const PERSONAL_NUMBER = "+94778252292"
+export const PERSONAL_EMAIL = "rangabandara1729@gmail.com"

@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portfolio-ranga1729s-projects.vercel.app/";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rangamudunkotuwa.vercel.app/";
 
 export const metadata: Metadata = {
   // metadataBase: new URL(SITE_URL),  

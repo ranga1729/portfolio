@@ -2,7 +2,7 @@ import { PERSONAL_NUMBER } from "@/data/general";
 
 // components/person-json-ld.tsx
 export default function PersonJsonLd() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portfolio-ranga1729s-projects.vercel.app/";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rangamudunkotuwa.vercel.app/";
 
   const schema = {
     "@context": "https://schema.org",

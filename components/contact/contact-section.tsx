@@ -1,6 +1,8 @@
 
-import { SOCIAL_LINKS } from "@/data/general";
+import { PERSONAL_EMAIL, PERSONAL_NUMBER, SOCIAL_LINKS } from "@/data/general";
 import SocialIcon from "./social-icon";
+import WhatsAppButton from "./WhatsAppButton";
+import EmailButton from "./EmailButton";
 import Aurora from "@/components/background/Aurora";
 
 export default function ContactSection() {
@@ -35,11 +37,10 @@ export default function ContactSection() {
         className="pointer-events-none absolute inset-0 z-[-1] bg-linear-to-b from-[#08090D]/20 via-[#08090D]/65 to-[#08090D]"
       />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 pb-10 pt-28 sm:px-10 sm:pt-36">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 pb-16 pt-28 sm:px-10 sm:pt-36">
 
         {/* Section Content */}
         <div className="flex max-w-2xl flex-col items-center text-center">
-
           <span className="mb-6 font-mono text-xs font-medium uppercase tracking-[0.3em] text-blue-400">
             Get in touch
           </span>
@@ -60,6 +61,28 @@ export default function ContactSection() {
           {SOCIAL_LINKS.map((item) => (
             <SocialIcon key={item.label} {...item} />
           ))}
+        </div>
+
+        {/* Direct Contact */}
+        <div className="mt-12 w-full max-w-2xl">
+          <div className="mb-5 flex items-center gap-4">
+            <div className="h-px flex-1 bg-white/10" />
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-zinc-500">
+              Or reach me directly
+            </span>
+            <div className="h-px flex-1 bg-white/10" />
+          </div>
+
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <WhatsAppButton
+              phoneNumber={PERSONAL_NUMBER}
+            />
+
+            <EmailButton
+              email={PERSONAL_EMAIL}
+              subject="Hello!"
+            />
+          </div>
         </div>
       </div>
     </section>

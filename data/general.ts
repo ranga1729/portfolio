@@ -642,3 +642,4 @@ export const INSTITUTE_SCHEDULES: InstituteItem[] = [
 
 export const PERSONAL_NUMBER = "+94778252292"
 export const PERSONAL_EMAIL = "rangabandara1729@gmail.com"
+export const CV_LINK = "https://drive.google.com/file/d/105RKLxIvzn9USacxAFNTMVCLaF8FrniA/view?usp=drive_link"

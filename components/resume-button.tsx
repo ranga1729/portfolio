@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { CV_LINK } from "@/data/general";
 
 export default function ResumeButton() {
   return (
@@ -10,7 +11,7 @@ export default function ResumeButton() {
       className="group h-auto p-0 bg-transparent hover:bg-transparent text-foreground hover:text-foreground font-normal text-sm tracking-tight"
     >
       <Link
-        href="/"
+        href={CV_LINK}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5"
